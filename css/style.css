@@ -1,0 +1,71 @@
+.dn-jumbotron{
+  margin: auto;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dn-box{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 100px;
+  color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  background: rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+#dn-records{
+  margin: 0px;
+  padding: 0px;
+}
+
+#dn-remain-times{
+  margin: 10px 0px;
+}
+
+#dn-announce{
+  margin: 15px 0px;
+}
+
+#dn-welcome{
+  margin: 10px 0px;
+}
+
+#dn-remain-time{
+  margin: 10px 0px;
+}
+
+#dn-input{
+  margin: 15px 0px;
+}
+
+.buttons{
+  margin: 15px 0px;
+}
+
+.dn-history{
+  margin: 15px 0px;
+}
+
+.dn-dashboard{
+  width: 80%;
+  margin: auto;
+  padding: 50px;
+}
+
+.dn-buttons-dashboard{
+  margin: 20px;
+}
+
+.dn-input-number, .dn-input-text{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}

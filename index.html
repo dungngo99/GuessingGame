@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" crossorigin="anonymous" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" />
+  <link rel="stylesheet" crossorigin="anonymous"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" />
+  <link href='css/style.css' rel='stylesheet'>
+</head>
+
+<body>
+  <div class='dn-jumbotron'>
+    <div class='dn-box'>
+      <h1 id='dn-welcome'>Welcome to Guessing Game</h1>
+      <h2 id='dn-remain-times'>Remaining guessing times: 10</h2>
+      <h3 id='dn-remain-time'>Remaing time: 30s</h3>
+      <p id='dn-announce'>Start a new game!</p>
+      <div class='row dn-inputs'>
+        <div class='col-md-6 dn-input-text'>
+          <label>Name</label>
+          <input id='dn-input-tex' class='dn-input' type='text'>
+        </div>
+        <div class='col-md-6 dn-input-number'>
+          <label>Number</label>
+          <input id='dn-input-num' class='dn-input' type='number'>
+        </div>
+      </div>
+      <div class='buttons'>
+        <button id='dn-start-btn' class='btn btn-success btn-lg btn-outline-dark' onclick='start()'>Start</button>
+        <button id='dn-guess-btn' class='btn btn-primary btn-lg btn-outline-dark' onclick='guess()'
+          disabled>Guess</button>
+        <button id='dn-reset-btn' class='btn btn-danger btn-lg btn-outline-dark' onclick='reset()'
+          disabled>Reset</button>
+        <button id='dn-stop-btn' class='btn btn-info btn-lg btn-outline-dark' onclick='stop()'>Stop</button>
+      </div>
+      <button id='dn-reset-btn' class='btn btn-warning btn-lg btn-outline-dark' onclick="myTable">Check
+        Dashboard</button>
+      <h4 class='dn-history'>History</h4>
+      <p id='dn-records'>...</p>
+    </div>
+  </div>
+
+  <div class='dn-dashboard'>
+    <h1 class='dn-dashboard-head'>Game Dashboard</h1>
+    <div class='dn-buttons-dashboard'>
+      <button id='dn-start-btn' class='btn btn-warning btn-lg btn-outline-dark'
+        onclick='updateDashboard()'>Update</button>
+    </div>
+    <table class="table table-hover" id='myTable'>
+      <thead>
+        <tr>
+          <th scope="col">#Round</th>
+          <th scope="col">Name</th>
+          <th scope="col">Time (s)</th>
+          <th scope="col">Result</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">1</th>
+          <td>Mark</td>
+          <td>25</td>
+          <td>Success</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+
+
+  <script src='script/script.js'></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
