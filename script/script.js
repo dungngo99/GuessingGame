@@ -192,6 +192,7 @@ function resetDashboard(){
   rounds = [];
   console.log(rounds);
 }
+
 /*
 The following optional features are implemented:
 10. The user can play multiple rounds of the game, and see results about previous rounds on the screen.
