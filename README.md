@@ -1,4 +1,4 @@
-# [Guessing Game](https://github.com/dungngo99/guessing-game) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)]()
+# [Guessing Game](https://github.com/dungngo99/guessing-game) &middot; [![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/dungngo99/guessing-game/blob/master/LICENSE)
 
 A web-based and UI-focused guessing game and written in HTML/CSS/JavaScript<br>
 
@@ -6,7 +6,7 @@ A web-based and UI-focused guessing game and written in HTML/CSS/JavaScript<br>
 
 ## Demo
 
-![Alt Text](http://www.giphy.com/gifs/VGbvcxhsOtQO6lEPtU)
+![Alt Text](https://media.giphy.com/media/VGbvcxhsOtQO6lEPtU/giphy.gif)
 
 ## 📚 Table of contents
 
