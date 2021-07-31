@@ -5,7 +5,6 @@ const TIMEOUT = 30;
 let timeOut = TIMEOUT, t = null, timer_is_on = 0;
 let randomNum = Math.floor(Math.random() * 100);
 let rounds = [];
-console.log(randomNum);
 
 /*
 Function to keep counting. setTimeout(timeCount, 1000) will keep call back timeCount() every 1 second forever until it reaches base case
@@ -171,6 +170,9 @@ async function updateGame(num) {
   return 0;
 }
 
+/**
+ * Function to update the dashboard after the user finishes the game
+ */
 function updateDashboard(){
   for (i = 0; i < rounds.length; i++) {
     let table = document.getElementById('myTable');
@@ -190,14 +192,5 @@ function updateDashboard(){
 
 function resetDashboard(){
   rounds = [];
-  console.log(rounds);
 }
-
-/*
-The following optional features are implemented:
-10. The user can play multiple rounds of the game, and see results about previous rounds on the screen.
-11. The user can see their best score of the session. Best score is defined as the round that took the fewest guesses to arrive at the correct number.
-12. The user can see how long it took to finish each round in seconds.
-13. The user is limited to 30 seconds per guess. If the user does not guess within the allotted time, the turn is lost.
-*/
 
